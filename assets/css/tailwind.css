@@ -76,43 +76,38 @@
     @apply bg-background text-foreground;
   }
   @font-face {
-    font-family: Poppins;
-    font-weight: 100;
-    src: url(../font/poppins/Poppins-Thin.ttf);
-  }
-  @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 200;
-    src: url(../font/poppins/Poppins-ExtraLight.ttf);
+    src: url(../font/dosis/Dosis-ExtraLight.ttf);
   }
   @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 300;
-    src: url(../font/poppins/Poppins-Light.ttf);
+    src: url(../font/dosis/Dosis-Light.ttf);
   }
   @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 400;
-    src: url(../font/poppins/Poppins-Regular.ttf);
+    src: url(../font/dosis/Dosis-Regular.ttf);
   }
   @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 500;
-    src: url(../font/poppins/Poppins-Medium.ttf);
+    src: url(../font/dosis/Dosis-Medium.ttf);
   }
   @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 600;
-    src: url(../font/poppins/Poppins-SemiBold.ttf);
+    src: url(../font/dosis/Dosis-SemiBold.ttf);
   }
   @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 700;
-    src: url(../font/poppins/Poppins-Bold.ttf);
+    src: url(../font/dosis/Dosis-Bold.ttf);
   }
   @font-face {
-    font-family: Poppins;
+    font-family: Dosis;
     font-weight: 800;
-    src: url(../font/poppins/Poppins-ExtraBold.ttf);
+    src: url(../font/dosis/Dosis-ExtraBold.ttf);
   }
 }
