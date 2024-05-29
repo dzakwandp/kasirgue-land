@@ -75,6 +75,19 @@
         </Card>
       </div>
     </div>
+    <!-- fourth section -->
+    <div
+      class="flex flex-col h-max w-full items-center mt-16 gap-4"
+      data-aos="fade-up">
+      <div class="text-primary font-semibold text-3xl">
+        Basic sama Premium? Bedanya apa sih?
+      </div>
+      <div class="text-center font-semibold text-lg">
+        Bedanya? Dengan fitur premium Loe bisa request fitur yang pastinya akan
+        sangat membantu usaha Loe.<br>
+        Perbedaan lebih detail bisa Loe liat di tabel berikut yaa.
+      </div>
+    </div>
   </div>
 </template>
 
@@ -99,6 +112,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import {Table, TableBody, TableHeader, TableHead, TableRow,TableCell} from "@/components/ui/table"
 export default {
   components: {
     Card,
