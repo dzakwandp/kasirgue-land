@@ -4,27 +4,13 @@
     <div
       @scroll="handleScroll()"
       class="flex h-max w-full fixed py-4 transition ease-in-out duration-700 z-10"
-      :class="isScrolled ? 'bg-white text-primary' : 'text-white'">
+      :class="isScrolled ? 'bg-white text-primary shadow-md' : 'text-white'">
       <div class="flex w-1/3 items-center">
         <NuxtLink
           to="/"
-          class="w-32 mx-auto transition ease-in-out duration-700 cursor-pointer">
+          class="w-28 mx-auto transition ease-in-out duration-700 cursor-pointer">
           <img :src="isScrolled ? logo : logoWhite" />
         </NuxtLink>
-      </div>
-      <div class="flex w-1/3 items-center justify-center gap-6 font-medium">
-        <div v-for="items in links" :key="items.id" class="hover:underline">
-          <NuxtLink :to="items.route">{{ items.title }}</NuxtLink>
-        </div>
-      </div>
-      <div class="flex w-1/3 items-center justify-center">
-        <a
-          href="http://api.whatsapp.com/send?phone=6285888080045&text=Hallo%20kak,%20mau%20informasi%20selanjutnya%20tentang%20Kasirgue%20dong"
-          target="_blank">
-          <Button class="text-white size-max gap-2"
-            ><Whatsapp class="w-6 fill-white" />Chat Now</Button
-          >
-        </a>
       </div>
     </div>
   </div>
@@ -34,11 +20,9 @@
 import { Button } from "@/components/ui/button";
 import LogoWhite from "@/assets/images/logo_white.png";
 import Logo from "@/assets/images/logo.png";
-import Whatsapp from "@/components/icons/whatsapp.vue";
 export default {
   components: {
     Button,
-    Whatsapp,
   },
   data() {
     return {

@@ -110,4 +110,40 @@
     font-weight: 800;
     src: url(../font/dosis/Dosis-ExtraBold.ttf);
   }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 200;
+    src: url(../font/rubik/Rubik-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 300;
+    src: url(../font/rubik/Rubik-Light.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 400;
+    src: url(../font/rubik/Rubik-Regular.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 500;
+    src: url(../font/rubik/Rubik-Medium.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 600;
+    src: url(../font/rubik/Rubik-SemiBold.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 700;
+    src: url(../font/rubik/Rubik-Bold.ttf);
+  }
+  @font-face {
+    font-family: Rubik;
+    font-weight: 800;
+    src: url(../font/rubik/Rubik-ExtraBold.ttf);
+  }
+  
 }
