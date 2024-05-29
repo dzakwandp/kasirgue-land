@@ -84,9 +84,23 @@
       </div>
       <div class="text-center font-semibold text-lg">
         Bedanya? Dengan fitur premium Loe bisa request fitur yang pastinya akan
-        sangat membantu usaha Loe.<br>
+        sangat membantu usaha Loe.<br />
         Perbedaan lebih detail bisa Loe liat di tabel berikut yaa.
       </div>
+      <Table class="w-1/3 mx-auto text-lg">
+        <TableHeader >
+          <TableRow>
+            <TableHead class="font-bold text-primary">Basic</TableHead>
+            <TableHead class="font-bold text-secondary">Premium</TableHead>
+          </TableRow>
+        </TableHeader>
+        <TableBody>
+          <TableRow v-for="items in content" :key="items.index">
+            <TableCell>{{ items.basic }}</TableCell>
+            <TableCell>{{ items.premium }}</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
     </div>
   </div>
 </template>
@@ -112,7 +126,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {Table, TableBody, TableHeader, TableHead, TableRow,TableCell} from "@/components/ui/table"
+import {
+  Table,
+  TableBody,
+  TableHeader,
+  TableHead,
+  TableRow,
+  TableCell,
+} from "@/components/ui/table";
 export default {
   components: {
     Card,
@@ -121,6 +142,12 @@ export default {
     CardFooter,
     CardHeader,
     CardTitle,
+    Table,
+    TableBody,
+    TableHeader,
+    TableHead,
+    TableRow,
+    TableCell,
   },
   data() {
     return {
@@ -137,6 +164,21 @@ export default {
         { title: "Barbershop", image: Barbershop },
         { title: "Laundry", image: Laundry },
         { title: "Dsb", image: Dsb },
+      ],
+      content: [
+        { basic: "Ringkasan Bisnis", premium: "Pengelolaan Supplier" },
+        { basic: "Pengelolaan Produk", premium: "Pengelolaan Pelanggan" },
+        {
+          basic: "Pengelolaan Penjualan",
+          premium: "Sistem Barcode dan Labeling",
+        },
+        { basic: "Pengelolaan Stok", premium: "Foto Produk" },
+        {
+          basic: "Pengelolaan Pembelian",
+          premium: "Dan lainnya sesuai custom Loe",
+        },
+        { basic: "Laporan Laba Rugi", premium: "" },
+        { basic: "Sistem Berbasis Online", premium: "" },
       ],
     };
   },
