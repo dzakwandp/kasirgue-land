@@ -2,7 +2,7 @@
   <div class="bg-[#e2e8f0]">
     <!-- first section -->
     <div
-      class="flex w-full h-screen"
+      class="flex md:flex-row flex-col w-full h-screen"
       :style="{ backgroundImage: `url(${bgImage})` }"
       style="
         background-size: cover;
@@ -12,12 +12,12 @@
       ">
       <!-- left side -->
       <div
-        class="flex flex-col h-full w-1/2 items-center justify-center gap-3 text-white">
-        <div class="text-6xl font-semibold">#WaktunyaOnline</div>
-        <div class="text-2xl">
+        class="flex flex-col h-full md:w-1/2 w-full items-center justify-center gap-3 text-white">
+        <div class="md:text-6xl text-5xl font-semibold">#WaktunyaOnline</div>
+        <div class="text-2xl md-mx-0 mx-6 text-center">
           Online-in rekap keuangan Loe sekarang dengan Kasirgue!
         </div>
-        <div class="mx-6 text-xl text-justify">
+        <div class="mx-6 md:text-xl text-lg text-justify md:ml-10">
           Dapetin mudahnya mengakses rekap keuangan Loe dimanapun dan kapanpun
           dengan keamanan data terbaik bersama Kasirgue. Mulai buat sistem
           aplikasi Loe cuma dengan Rp<span class="font-number font-light"
@@ -27,7 +27,7 @@
         </div>
       </div>
       <!-- right side -->
-      <div class="flex w-1/2 items-end justify-end">
+      <div class="flex md:w-1/2 w-full items-end justify-end">
         <img class="w-[80%] h-auto mr-4" :src="homeImage" alt="" />
       </div>
     </div>
@@ -42,21 +42,26 @@
         Dengan Rp<span class="font-number font-normal">5000</span> per hari Loe
         sudah bisa dapetin aplikasi kasir yang bisa diakses 24 Jam.
       </div>
-      <div class="flex gap-8 w-full justify-center">
-        <Card class="flex w-1/5 flex-col gap-2 px-4 items-center shadow-none">
+      <div
+        class="flex md:flex-row flex-col gap-8 w-full justify-center md:items-stretch items-center">
+        <Card
+          class="flex md:w-1/5 w-1/2 flex-col gap-2 px-4 items-center shadow-none">
           <div
             class="flex w-2/3 bg-primary text-white text-xl p-2 rounded-b-sm justify-center">
             Basic
           </div>
-          <CardContent class="text-xl text-primary font-bold font-number"> Rp150.000/bulan </CardContent>
+          <CardContent class="text-xl text-primary font-bold font-number">
+            Rp150.000/bulan
+          </CardContent>
         </Card>
-        <Card class="flex w-1/5 flex-col gap-2 items-center shadow-none">
+        <Card
+          class="flex md:w-1/5 w-1/2 flex-col gap-2 items-center shadow-none">
           <div
             class="flex w-2/3 bg-secondary text-white text-xl p-2 rounded-b-sm justify-center">
             Premium
           </div>
-          <CardContent class="flex flex-col items-center font-number">
-            Hubungi gue aja yok
+          <CardContent class="flex flex-col items-center font-number gap-4">
+            <div class="md:text-normal text-sm">Hubungi gue aja yok</div>
             <a
               href="http://api.whatsapp.com/send?phone=6285888080045&text=Hallo%20kak,%20mau%20informasi%20selanjutnya%20tentang%20Kasirgue%20dong"
               target="_blank">
@@ -72,12 +77,12 @@
     <div
       class="flex flex-col h-max w-full items-center mt-16 gap-4"
       data-aos="fade-up">
-      <div class="text-primary font-semibold text-3xl">
+      <div class="text-primary font-semibold text-3xl text-center">
         Kasirgue cocok untuk apapun bidang usaha Loe
       </div>
       <div class="flex flex-wrap justify-center w-5/6 gap-6">
         <Card
-          class="w-1/6 hover:-translate-y-1 hover:scale-110 transition-all ease-in-out duration-300"
+          class="md:w-1/6 w-1/3 hover:-translate-y-1 hover:scale-110 transition-all ease-in-out duration-300"
           v-for="items in usaha"
           :key="items.index">
           <img class="rounded-xl" :src="items.image" />
@@ -88,15 +93,15 @@
     <div
       class="flex flex-col h-max w-full items-center mt-16 gap-4"
       data-aos="fade-up">
-      <div class="text-primary font-semibold text-3xl">
+      <div class="text-primary font-semibold text-3xl text-center">
         Basic sama Premium? Bedanya apa sih?
       </div>
-      <div class="text-center font-semibold text-lg">
+      <div class="text-center font-semibold text-lg md:mx-0 mx-2">
         Bedanya? Dengan fitur premium Loe bisa request fitur yang pastinya akan
         sangat membantu usaha Loe.<br />
         Perbedaan lebih detail bisa Loe liat di tabel berikut yaa.
       </div>
-      <Table class="w-1/3 mx-auto text-lg">
+      <Table class="md:w-1/3 w-2/3 mx-auto text-lg">
         <TableHeader>
           <TableRow>
             <TableHead class="font-bold text-primary text-center">
@@ -119,18 +124,18 @@
     <div
       class="flex flex-col w-full h-max py-8 bg-primary items-center mt-8"
       data-aos="fade-up">
-      <div class="text-white font-semibold text-3xl">
+      <div class="text-white font-semibold text-3xl text-center">
         Daripada bingung, yok segera hubungi Gue!
       </div>
-      <div class="text-white font-semibold text-lg">
+      <div class="text-white font-semibold text-lg text-center">
         Dengan fitur-fitur diatas, tentunya Kasirgue akan berikan harga yang
         menarik buat Loe-Loe yang ingin mengembangkan usaha!
       </div>
       <div class="flex w-full mt-10">
-        <div class="flex flex-col w-1/2">
-          <div class="flex justify-center gap-4 h-max">
+        <div class="flex flex-col md:w-1/2">
+          <div class="flex md:flex-row flex-col justify-center md:items-stretch items-center gap-4 h-max">
             <Card
-              class="flex w-1/3 flex-col gap-2 px-4 items-center shadow-none">
+              class="flex md:w-1/3 w-2/3 flex-col gap-2 px-4 items-center shadow-none">
               <div
                 class="flex w-2/3 bg-primary text-white text-xl p-2 rounded-b-sm justify-center">
                 Basic
@@ -149,13 +154,14 @@
                 </div>
               </CardContent>
             </Card>
-            <Card class="flex w-1/3 flex-col gap-2 items-center shadow-none">
+            <Card class="flex md:w-1/3 w-2/3 flex-col gap-2 items-center shadow-none">
               <div
                 class="flex w-2/3 bg-secondary text-white text-xl p-2 rounded-b-sm justify-center">
                 Premium
               </div>
-              <CardContent class="flex flex-col items-center text-center font-number">
-                Hubungi gue untuk tentuin fitur yang Loe butuhin 
+              <CardContent
+                class="flex flex-col items-center text-center font-number">
+                Hubungi gue untuk tentuin fitur yang Loe butuhin
                 <a
                   href="http://api.whatsapp.com/send?phone=6285888080045&text=Hallo%20kak,%20mau%20informasi%20selanjutnya%20tentang%20Kasirgue%20dong"
                   target="_blank">
@@ -166,10 +172,14 @@
               </CardContent>
             </Card>
           </div>
-          <div class="text-white text-center">*Harga diatas sudah termasuk free akses 45 hari pertama.</div>
-          <div class="text-white text-center text-5xl font-semibold">#WaktunyaOnline</div>
+          <div class="text-white text-center mt-4">
+            *Harga diatas sudah termasuk free akses 45 hari pertama.
+          </div>
+          <div class="text-white text-center md:text-5xl text-4xl font-semibold">
+            #WaktunyaOnline
+          </div>
         </div>
-        <div class="flex w-1/2 justify-center">
+        <div class="hidden md:flex w-1/2 justify-center">
           <img :src="MascotDrink" class="w-1/5" />
         </div>
       </div>

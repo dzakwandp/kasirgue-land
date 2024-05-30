@@ -3,9 +3,9 @@
     <!-- header -->
     <div
       @scroll="handleScroll()"
-      class="flex h-max w-full fixed py-4 transition ease-in-out duration-700 z-10"
+      class="flex h-max w-full fixed py-4 md:justify-start justify-center transition ease-in-out duration-700 z-10"
       :class="isScrolled ? 'bg-white text-primary shadow-md' : 'text-white'">
-      <div class="flex w-1/3 items-center">
+      <div class="flex md:w-1/3 items-center">
         <NuxtLink
           to="/"
           class="w-28 mx-auto transition ease-in-out duration-700 cursor-pointer"
