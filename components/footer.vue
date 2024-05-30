@@ -4,7 +4,7 @@
     <div class="w-full bg-[#e2e8f0] h-[10px]"></div>
     <div class="flex md:flex-row flex-col w-full h-max md:px-40 md:py-20 md:mt-0 mt-4 items-center">
       <div class="flex md:w-1/3 w-full">
-        <img :src="LogoWhite" class="w-1/3 h-max md:mx-0 mx-auto" />
+        <img :src="LogoWhite" class="size-1/3 md:mx-0 mx-auto" />
       </div>
       <div class="flex md:w-2/3 md:gap-0 gap-2">
         <div class="flex w-1/2 flex-col text-white">

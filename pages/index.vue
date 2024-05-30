@@ -12,7 +12,7 @@
       ">
       <!-- left side -->
       <div
-        class="flex flex-col h-full md:w-1/2 w-full items-center justify-center gap-3 text-white">
+        class="flex flex-col h-full md:w-1/2 w-full sm:mt-0 mt-14 items-center justify-center gap-3 text-white">
         <div class="md:text-6xl text-5xl font-semibold">#WaktunyaOnline</div>
         <div class="text-2xl md-mx-0 mx-6 text-center">
           Online-in rekap keuangan Loe sekarang dengan Kasirgue!
