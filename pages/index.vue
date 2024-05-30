@@ -42,20 +42,29 @@
         Dengan Rp<span class="font-number font-normal">5000</span> per hari Loe
         sudah bisa dapetin aplikasi kasir yang bisa diakses 24 Jam.
       </div>
-      <div class="flex gap-8">
-        <Card class="flex w-1/2 flex-col gap-2 px-4 items-center shadow-none">
+      <div class="flex gap-8 w-full justify-center">
+        <Card class="flex w-1/5 flex-col gap-2 px-4 items-center shadow-none">
           <div
             class="flex w-2/3 bg-primary text-white text-xl p-2 rounded-b-sm justify-center">
             Basic
           </div>
-          <CardContent class="font-number"> Rp150.000/bulan </CardContent>
+          <CardContent class="text-xl text-primary font-bold font-number"> Rp150.000/bulan </CardContent>
         </Card>
-        <Card class="flex w-1/2 flex-col gap-2 items-center shadow-none">
+        <Card class="flex w-1/5 flex-col gap-2 items-center shadow-none">
           <div
             class="flex w-2/3 bg-secondary text-white text-xl p-2 rounded-b-sm justify-center">
             Premium
           </div>
-          <CardContent class="font-number"> Hubungi gue aja yok </CardContent>
+          <CardContent class="flex flex-col items-center font-number">
+            Hubungi gue aja yok
+            <a
+              href="http://api.whatsapp.com/send?phone=6285888080045&text=Hallo%20kak,%20mau%20informasi%20selanjutnya%20tentang%20Kasirgue%20dong"
+              target="_blank">
+              <Button class="text-white size-max gap-2">
+                <Whatsapp class="w-6 fill-white" />Chat Gue
+              </Button>
+            </a>
+          </CardContent>
         </Card>
       </div>
     </div>
@@ -88,10 +97,14 @@
         Perbedaan lebih detail bisa Loe liat di tabel berikut yaa.
       </div>
       <Table class="w-1/3 mx-auto text-lg">
-        <TableHeader >
+        <TableHeader>
           <TableRow>
-            <TableHead class="font-bold text-primary">Basic</TableHead>
-            <TableHead class="font-bold text-secondary">Premium</TableHead>
+            <TableHead class="font-bold text-primary text-center">
+              Basic
+            </TableHead>
+            <TableHead class="font-bold text-secondary text-center">
+              Premium
+            </TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -101,6 +114,65 @@
           </TableRow>
         </TableBody>
       </Table>
+    </div>
+    <!-- fifth section -->
+    <div
+      class="flex flex-col w-full h-max py-8 bg-primary items-center mt-8"
+      data-aos="fade-up">
+      <div class="text-white font-semibold text-3xl">
+        Daripada bingung, yok segera hubungi Gue!
+      </div>
+      <div class="text-white font-semibold text-lg">
+        Dengan fitur-fitur diatas, tentunya Kasirgue akan berikan harga yang
+        menarik buat Loe-Loe yang ingin mengembangkan usaha!
+      </div>
+      <div class="flex w-full mt-10">
+        <div class="flex flex-col w-1/2">
+          <div class="flex justify-center gap-4 h-max">
+            <Card
+              class="flex w-1/3 flex-col gap-2 px-4 items-center shadow-none">
+              <div
+                class="flex w-2/3 bg-primary text-white text-xl p-2 rounded-b-sm justify-center">
+                Basic
+              </div>
+              <CardContent class="font-number text-center">
+                <div class="text-2xl text-primary font-bold">Rp5.000/hari</div>
+                <div>Rp150.000/bulan</div>
+                <div class="line-through mt-4 text-black/60">
+                  Rp1.800.000/tahun
+                </div>
+                <div class="text-xl text-primary font-bold">
+                  Rp1.500.000/tahun
+                </div>
+                <div class="italic text-xs">
+                  *khusus langganan langsung selama satu tahun
+                </div>
+              </CardContent>
+            </Card>
+            <Card class="flex w-1/3 flex-col gap-2 items-center shadow-none">
+              <div
+                class="flex w-2/3 bg-secondary text-white text-xl p-2 rounded-b-sm justify-center">
+                Premium
+              </div>
+              <CardContent class="flex flex-col items-center text-center font-number">
+                Hubungi gue untuk tentuin fitur yang Loe butuhin 
+                <a
+                  href="http://api.whatsapp.com/send?phone=6285888080045&text=Hallo%20kak,%20mau%20informasi%20selanjutnya%20tentang%20Kasirgue%20dong"
+                  target="_blank">
+                  <Button class="text-white size-max gap-2">
+                    <Whatsapp class="w-6 fill-white" />Chat Gue
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+          <div class="text-white text-center">*Harga diatas sudah termasuk free akses 45 hari pertama.</div>
+          <div class="text-white text-center text-5xl font-semibold">#WaktunyaOnline</div>
+        </div>
+        <div class="flex w-1/2 justify-center">
+          <img :src="MascotDrink" class="w-1/5" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -118,6 +190,8 @@ import Fashion from "@/assets/images/fashion.jpg";
 import Barbershop from "@/assets/images/barbershop.jpg";
 import Laundry from "@/assets/images/laundry.jpg";
 import Dsb from "@/assets/images/dsb.jpg";
+import MascotDrink from "@/assets/images/mascotdrink.png";
+import Whatsapp from "@/components/icons/whatsapp.vue";
 import {
   Card,
   CardContent,
@@ -148,11 +222,13 @@ export default {
     TableHead,
     TableRow,
     TableCell,
+    Whatsapp,
   },
   data() {
     return {
       bgImage: bgImage,
       homeImage: homeImage,
+      MascotDrink: MascotDrink,
       usaha: [
         { title: "Kuliner (FnB)", image: Kuliner },
         { title: "Online Shop", image: OnlineShop },

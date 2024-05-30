@@ -8,7 +8,8 @@
       <div class="flex w-1/3 items-center">
         <NuxtLink
           to="/"
-          class="w-28 mx-auto transition ease-in-out duration-700 cursor-pointer">
+          class="w-28 mx-auto transition ease-in-out duration-700 cursor-pointer"
+          @click="toTop()">
           <img :src="isScrolled ? logo : logoWhite" />
         </NuxtLink>
       </div>
@@ -44,6 +45,12 @@ export default {
       if (window.scrollY < 145) {
         this.isScrolled = false;
       }
+    },
+    toTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     },
   },
   mounted() {

@@ -8,20 +8,23 @@
         href="http://api.whatsapp.com/send?phone=6285888080045&text=Hallo%20kak,%20mau%20informasi%20selanjutnya%20tentang%20Kasirgue%20dong"
         target="_blank">
         <Button class="text-white size-max gap-2"
-          ><Whatsapp class="w-6 fill-white" />Chat Now</Button
+          ><Whatsapp class="w-6 fill-white" />Chat Gue</Button
         >
       </a>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Whatsapp from "@/components/icons/whatsapp.vue";
 import Header from "@/components/header.vue";
+import Footer from "@/components/footer.vue";
 export default {
   components: {
     Header,
-    Whatsapp
+    Footer,
+    Whatsapp,
   },
 };
 </script>
